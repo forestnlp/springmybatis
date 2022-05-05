@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.dao.BookDao">
+
+    <select resultType="com.demo.entity.Book" id="findAll">
+        select *
+        from book
+    </select>
+
+    <select id="findById" resultType="com.demo.entity.Book">
+        select *
+        from book
+        where id = #{id}
+    </select>
+
+    <update id="updatePriceById">
+        update book set price = #{price}
+        where id = #{id}
+    </update>
+
+
+</mapper>
