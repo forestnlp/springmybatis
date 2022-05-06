@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.dao.AccountDao">
+
+    <select resultType="com.demo.entity.Account" id="findAll">
+        select *
+        from account
+    </select>
+
+    <insert id="insertOne" useGeneratedKeys="true" keyProperty="id" parameterType="com.demo.entity.Account">
+        <selectKey keyProperty="id" resultType="Integer" order="BEFORE">
+            select max(id)+1 as id from account
+        </selectKey>
+        insert into account(id,name,money) value (#{id},#{name},#{money})
+    </insert>
+
+    <insert id="insertOneWithPK" useGeneratedKeys="true" keyProperty="id" parameterType="com.demo.entity.Account">
+        insert into account(name,money) value (#{name},#{money})
+    </insert>
+
+</mapper>

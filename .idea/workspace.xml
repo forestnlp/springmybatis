@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a7c4de4-7e29-43be-8a75-dc1a8e2bb7ff" name="变更" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/dao/ImgMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/entity/Img.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-generator/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MyTest2.java" afterDir="false" />
+    <list default="true" id="3a7c4de4-7e29-43be-8a75-dc1a8e2bb7ff" name="变更" comment="mybatis generator">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/AccountDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyTest3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BookDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BookDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,23 +44,28 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/jay/IdeaProjects/springmybatis/src/main/resources/mapper",
     "project.structure.last.edited": "库",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "spring.configuration.checksum": "96be8723408462164297c1acf45c7c2f"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jay\IdeaProjects\springmybatis\src\main\resources\mapper" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jay\IdeaProjects\springmybatis\src\main\resources\spring" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="com.demo.dao" />
       <recent name="com.demo.entity" />
-      <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest2.test01">
+  <component name="RunManager" selected="JUnit.MyTest3.test02">
     <configuration name="MyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springmybatis" />
       <option name="PACKAGE_NAME" value="" />
@@ -89,11 +94,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springmybatis" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="test01" />
+      <option name="MAIN_CLASS_NAME" value="MyTest3" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest3.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springmybatis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest3" />
+      <option name="METHOD_NAME" value="test02" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,10 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest3.test02" />
+        <item itemvalue="JUnit.MyTest3" />
         <item itemvalue="JUnit.MyTest2.test01" />
         <item itemvalue="JUnit.MyTest" />
         <item itemvalue="JUnit.MyTest2" />
-        <item itemvalue="JUnit.MyTest.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +132,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651735221780</updated>
       <workItem from="1651735223062" duration="2062000" />
-      <workItem from="1651798017030" duration="2396000" />
+      <workItem from="1651798017030" duration="4885000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1651736933960</created>
@@ -126,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651736933960</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mybatis generator">
+      <created>1651800459665</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651800459665</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +167,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="mybatis generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis generator" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

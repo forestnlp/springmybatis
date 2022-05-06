@@ -26,6 +26,7 @@
             <list>
                 <value>classpath:mapper/BookDao.xml</value>
                 <value>classpath:mapper/ImgMapper.xml</value>
+                <value>classpath:mapper/AccountDao.xml</value>
             </list>
         </property>
     </bean>
