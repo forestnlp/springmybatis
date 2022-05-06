@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.dao.CityDao">
+    <!--第一种方法，内部执行2个sql-->
+    <resultMap id="city1" type="com.demo.entity.City">
+        <id property="city_id" column="city_id"></id>
+        <result property="city" column="city"></result>
+        <result property="last_update" column="last_update"></result>
+        <association property="country" column="country_id" javaType="com.demo.entity.Country" select="com.demo.dao.CountryDao.findById"></association>
+    </resultMap>
+
+    <select resultMap="city1" id="findById" parameterType="Integer">
+        select *
+        from city where city_id = #{id}
+    </select>
+
+    <resultMap id="city2" type="com.demo.entity.City">
+        <id property="city_id" column="city_id"></id>
+        <result property="city" column="city"></result>
+        <result property="last_update" column="last_update"></result>
+        <association property="country" javaType="com.demo.entity.Country">
+            <id property="country_id" column="country_id"></id>
+            <result property="country" column="country"></result>
+            <result property="last_update" column="blast_update"></result>
+        </association>
+    </resultMap>
+    <select resultMap="city2" id="findById2" parameterType="Integer">
+        select a.*,b.country,b.last_update blast_update
+        from city a,country b  where a.country_id = b.country_id and city_id = #{id}
+    </select>
+
+</mapper>

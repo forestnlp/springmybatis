@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a7c4de4-7e29-43be-8a75-dc1a8e2bb7ff" name="变更" comment="mybatis generator">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/dao/CityDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/dao/CountryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/entity/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/entity/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CityDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CountryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyTest4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-generator/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -34,19 +42,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/jay/IdeaProjects/springmybatis/src/main/resources/mapper",
-    "project.structure.last.edited": "库",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "spring.configuration.checksum": "96be8723408462164297c1acf45c7c2f"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jay/IdeaProjects/springmybatis/src/main/resources/mapper&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;96be8723408462164297c1acf45c7c2f&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jay\IdeaProjects\springmybatis\src\main\resources\mapper" />
@@ -60,7 +68,7 @@
       <recent name="com.demo.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest3.test02">
+  <component name="RunManager" selected="JUnit.MyTest4">
     <configuration name="MyTest2.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springmybatis" />
       <option name="PACKAGE_NAME" value="" />
@@ -111,10 +119,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest4" />
         <item itemvalue="JUnit.MyTest3.test02" />
         <item itemvalue="JUnit.MyTest2.test01" />
         <item itemvalue="JUnit.MyTest.test01" />
-        <item itemvalue="JUnit.MyTest4" />
         <item itemvalue="JUnit.MyTest3" />
       </list>
     </recent_temporary>
@@ -128,7 +136,9 @@
       <option name="presentableId" value="Default" />
       <updated>1651735221780</updated>
       <workItem from="1651735223062" duration="2062000" />
-      <workItem from="1651798017030" duration="5995000" />
+      <workItem from="1651798017030" duration="6232000" />
+      <workItem from="1651806030887" duration="489000" />
+      <workItem from="1651821822104" duration="2409000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1651736933960</created>
@@ -151,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651804908073</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mybatis generator">
+      <created>1651805957003</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651805957003</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +189,16 @@
     <MESSAGE value="init" />
     <MESSAGE value="mybatis generator" />
     <option name="LAST_COMMIT_MESSAGE" value="mybatis generator" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.beans.factory.BeanCreationException" package="org.springframework.beans.factory" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

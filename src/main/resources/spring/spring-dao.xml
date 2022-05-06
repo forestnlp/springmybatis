@@ -27,13 +27,16 @@
                 <value>classpath:mapper/BookDao.xml</value>
                 <value>classpath:mapper/ImgMapper.xml</value>
                 <value>classpath:mapper/AccountDao.xml</value>
+                <value>classpath:mapper/CountryDao.xml</value>
+                <value>classpath:mapper/CityDao.xml</value>
             </list>
         </property>
     </bean>
 
     <!--mapper扫描-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory">
+        </property>
         <!--dao 接口所对应的包-->
         <property name="basePackage" value="com.demo.dao"></property>
     </bean>
