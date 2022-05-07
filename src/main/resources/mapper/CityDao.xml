@@ -29,4 +29,12 @@
         from city a,country b  where a.country_id = b.country_id and city_id = #{id}
     </select>
 
+    <select id="findById3" parameterType="String" resultType="com.demo.entity.City">
+        select *
+        from city where 1=1
+        <if test="city!=null and city!='' ">
+            and city like concat('%',#{city},'%')
+        </if>
+    </select>
+
 </mapper>

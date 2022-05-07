@@ -29,7 +29,7 @@
                 <value>classpath:mapper/AccountDao.xml</value>
                 <value>classpath:mapper/CountryDao.xml</value>
                 <value>classpath:mapper/CityDao.xml</value>
-            </list>
+          </list>
         </property>
     </bean>
 
